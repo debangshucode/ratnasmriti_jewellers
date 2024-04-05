@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>Ratnasmriti Gems & Jewellers</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="total_body">
+        <div class="top_nav">
+            <div class="title">
+                <h2 style="font-family: Plus Jakarta Sans;">Ratnasmriti Gems & Jewellers</h2>
+            </div>
+            <div class="menu">
+                <ul id="sidemenu">
+                    <li><a href="{% url " landing_home" %}">Home</a></li>
+                    <li><a href="{% url " landing_about" %}">About</a></li>
+                    <li><a href="#">Catagory &dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Catagory 1</a></li>
+                            <li><a href="#">Catagory 2</a></li>
+                            <li><a href="#">Catagory 3</a></li>
+                            <li><a href="#">Catagory 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url " landing_notice" %}">Contact US</a></li>
+
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="menuIcon"></i>
+        </div>
+
+        <div class="logo_title">
+            <div class="logo"><img src="images/logo.jpeg" alt=""></div>
+            <div class="logo_text">
+                <h2 style="font-family: Plus Jakarta Sans;">Ratnasmriti Gems & Jewellers</h2>
+            </div>
+        </div>
+        <div class="social_links">
+            <a href="tel:+916291176902" title="Click Here to Call Us"><i class="fa-solid fa-square-phone"></i></a>
+            <a href="https://www.facebook.com/rsjchannel/" target="_blank" title="Visit Our Facebook Page "><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtu.be/Jgcmim_NTIM" target="_blank" title="Visite Our YouTube Channel"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://maps.app.goo.gl/4RfrmAmUnJcNtucw8" target="_blank"
+                title="Click Here to See our Shop Location"><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+
+        <div class="main_body">
+            <div class="products_lists">
+                <div class="catagory_name"><h2>Catagory Name</h2></div>
+                <div class="product_card" onclick="window.location.href = 'product_page.html';">
+                    <div class="product_card_image"><img src="images/pop1.jpg" alt=""></div>
+                    <div class="product_card_text">
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga possimus, quasi nesciunt aspernatur ipsum libero excepturi minus ratione voluptatum iste deleniti. Placeat, voluptatibus! Minus pariatur at repudiandae ab voluptatem.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero soluta iure eum fugiat debitis, illum voluptate nihil earum, excepturi, rerum delectus iusto magni placeat iste vero in maxime voluptates natus.
+                        </div>
+                        <div class="price">Rs:2000</div>
+                        <div class="call_now"><a href="tel:+916291176902"><i class="fa-solid fa-square-phone"></i></a></div>
+                    </div>
+                </div>
+                <div class="product_card" onclick="window.location.href = 'product_page.html';">
+                    <div class="product_card_image"><img src="images/pop1.jpg" alt=""></div>
+                    <div class="product_card_text">
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga possimus, quasi nesciunt aspernatur ipsum libero excepturi minus ratione voluptatum iste deleniti. Placeat, voluptatibus! Minus pariatur at repudiandae ab voluptatem.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero soluta iure eum fugiat debitis, illum voluptate nihil earum, excepturi, rerum delectus iusto magni placeat iste vero in maxime voluptates natus.
+                        </div>
+                        <div class="price">Rs:2000</div>
+                        <div class="call_now"><a href="tel:+916291176902"><i class="fa-solid fa-square-phone"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>
