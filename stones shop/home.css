@@ -204,6 +204,30 @@ ul li ul li {
 .btn:hover {
     opacity: 1;
 }
+.dots-container {
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position the dots vertically */
+    left: 50%; /* Position the dots horizontally in the center */
+    transform: translateX(-50%); /* Center the dots horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure the dots appear above the image */
+}
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #e66f18;
+}
 
 /* populer products............. */
 
@@ -228,7 +252,8 @@ ul li ul li {
 
 .popular_container {
     display: flex;
-    width: calc(100% * 14);
+    flex-wrap: wrap;
+    min-width: 100%;
     margin: 10px 0;
     justify-content: center;
     align-items: center;
@@ -240,7 +265,7 @@ ul li ul li {
     height: 300px;
     width: 250px;
     /* border: 1px solid #000; */
-    margin: 0 15px;
+    margin: 15px 15px;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.351) 0px 2px 8px 0px;
     transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
@@ -703,7 +728,9 @@ ul li ul li {
     .social_links i {
         margin: 30px;
     }
-
+    .image-container{
+        height: 100%;
+    }
     .slider-container {
         height: 270px;
     }
@@ -714,14 +741,9 @@ ul li ul li {
     .popular_container {
         flex-wrap: wrap;
     }
-
-    .catagory .popular_container {
-        flex-wrap: nowrap;
-    }
-
     .popular_card {
-        height: 261px;
-        width: 213px;
+        height: 300px;
+        width: 152px;
         margin: 10px;
     }
 
