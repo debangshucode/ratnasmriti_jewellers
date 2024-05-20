@@ -8,11 +8,9 @@ function openmenu() {
 
     if (maxHeight === "0px") {
         sidemenu.style.maxHeight = "500px";
-        sidemenu.style.minHeight = "100vh";
         menuIcon.className = "fas fa-xmark";
     } else {
         sidemenu.style.maxHeight = "0px";
-        sidemenu.style.minHeight = "0px";
         menuIcon.className = "fas fa-bars";
     }
 }
@@ -81,4 +79,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
     imageContainerEl.addEventListener("mouseenter", stopSlideshow);
     imageContainerEl.addEventListener("mouseleave", startSlideshow);
+});
+
+// call popup
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.querySelector(".top_nav i");
+    const menu = document.querySelector(".top_nav .menu");
+    const callButton = document.querySelector(".call");
+    const popup = document.getElementById("call-popup");
+    const closeBtn = document.querySelector(".close-btn");
+
+    menuIcon.addEventListener("click", function() {
+        if (menu.style.maxHeight) {
+            menu.style.maxHeight = null;
+        } else {
+            menu.style.maxHeight = menu.scrollHeight + "px";
+        }
+    });
+
+    callButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        popup.style.display = "flex"; // Show the pop-up
+    });
+
+    closeBtn.addEventListener("click", function() {
+        popup.style.display = "none"; // Hide the pop-up
+    });
+
+    // Optional: Close the pop-up when clicking outside the pop-up content
+    window.addEventListener("click", function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    });
 });

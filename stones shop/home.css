@@ -184,6 +184,28 @@ ul li ul li {
     object-fit: cover;
     object-position: center;
 }
+.btn-see{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid  #93775C;
+    border-radius: 10px;
+    height: 55px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #93775C;
+    margin-bottom: 15px;
+}
+.btn-see a{
+    color: white;
+    font-size: 25px;
+}
+.btn-see:hover{
+    box-shadow: 2px 5px 10px #231E39;
+}
 
 .btn {
     position: absolute;
@@ -426,6 +448,7 @@ ul li ul li {
         width:45%;
         padding: 10px;
     }
+    
   }
   @media(max-width:790px){
     .testimonial-box{
@@ -517,7 +540,9 @@ p {
 	width: 350px;
 	max-width: 100%;
 	text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    height: fit-content;
+    padding: 25px;
 }
 
 .card-container .pro {
@@ -870,6 +895,7 @@ button.primary.ghost a{
     flex-wrap: wrap;
     margin-top: 30px;
     text-align:justify;
+    font-size: 20px;
 }
 .about_us .social_links{
     margin: 20px 0;
@@ -879,12 +905,20 @@ button.primary.ghost a{
 .top_nav i {
     display: none;
 }
-
+.bold {
+    font-weight: 600;
+}
 @media only screen and (max-width:768px) {
 
-    *{
+    body{
         overflow-x: hidden;
     }
+
+    .popular_container .popular_card:nth-of-type(n+5) {
+        display: none;
+    }
+
+
     .top_nav i {
         display: inline-flex;
         right: 0;
@@ -961,7 +995,13 @@ button.primary.ghost a{
         width: 152px;
         margin: 10px;
     }
-
+    .btn-see a {
+        font-size: 22px;
+    }
+    .btn-see{
+        width: 40%;
+        height: 45px;
+    }
     .slpop {
         height: 257px;
         width: 152px;
